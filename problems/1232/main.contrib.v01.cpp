@@ -23,4 +23,5 @@ int main(){
     vector<vector<int>> coordinates_false {{1,1}, {2,2}, {3,4}, {4,5}, {5,6}, {7,7}};
     cout<<solutionObject.checkStraightLine(coordinates_true)<<endl;
     cout<<solutionObject.checkStraightLine(coordinates_false)<<endl;
+    return 0;
 }
