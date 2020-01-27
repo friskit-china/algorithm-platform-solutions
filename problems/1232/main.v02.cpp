@@ -8,7 +8,6 @@ public:
     bool checkStraightLine(vector<vector<int>>& coordinates) {
         float k = (coordinates[0][1] * 1.0 - coordinates[1][1] * 1.0) / (coordinates[0][0] * 1.0 - coordinates[1][0] * 1.0);
         float b = (coordinates[0][1] - k * coordinates[0][0]);
-        // float b = (coordinates[0][0] * 1.0 * coordinates[1][1] * 1.0 - coordinates[0][1] * 1.0 * coordinates[1][0] * 1.0) / (coordinates[0][0] * 1.0 - coordinates[1][0] * 1.0);
         for (int i=2; i<coordinates.size(); i++){
             if (abs(k * coordinates[i][0] + b - coordinates[i][1]) > 1e-5){
                 return false;
