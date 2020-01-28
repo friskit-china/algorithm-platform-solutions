@@ -7,9 +7,9 @@ using namespace std;
 
 // sort by argument
 // start submit
-int arguments[1001];
 class Solution {
 public:
+    int arguments[1001];
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
         // prepare argument
         fill_n(arguments, 1001, 9999);
@@ -20,7 +20,7 @@ public:
         }
 
         // sort
-        sort(arr1.begin(), arr1.end(), [](const int & a, const int & b) -> bool{
+        sort(arr1.begin(), arr1.end(), [&](const int & a, const int & b) -> bool{
             int arg_a = arguments[a] != 9999 ? arguments[a] : a;
             int arg_b = arguments[b] != 9999 ? arguments[b] : b;
             return arg_a < arg_b;
