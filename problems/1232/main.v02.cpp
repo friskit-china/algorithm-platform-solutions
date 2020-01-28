@@ -1,3 +1,4 @@
+// https://leetcode-cn.com/problems/check-if-it-is-a-straight-line/
 #include <iostream>
 using namespace std;
 #include <vector>
