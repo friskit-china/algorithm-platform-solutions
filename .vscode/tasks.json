@@ -9,6 +9,7 @@
                 "-g",
                 "${file}",
                 "-pthread",
+                "-O1",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.out"
             ],
