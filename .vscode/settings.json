@@ -47,6 +47,8 @@
         "iterator": "cpp",
         "map": "cpp",
         "ratio": "cpp",
-        "mutex": "cpp"
+        "mutex": "cpp",
+        "cstring": "cpp",
+        "set": "cpp"
     }
 }
