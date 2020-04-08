@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-// 这个方法才符合题目要求
+// 这个方法才符合题目对时间复杂度的要求
 class Solution {
 public:
     int minCostII(vector<vector<int>>& costs) {
