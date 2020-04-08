@@ -10,14 +10,13 @@ public:
         if (prices.size() == 0){
             return 0;
         }
+        int result = 0;
         int min_price = prices[0];
-        int f[prices.size() + 1];
-        f[0] = 0;
-        for (int i = 1; i < prices.size() + 1; ++i){
-            min_price = min(min_price, prices[i - 1]);
-            f[i] = max(f[i - 1], prices[i - 1] - min_price);
+        for (int i = 1; i < prices.size(); ++i){
+            min_price = min(min_price, prices[i]);
+            result = max(result, prices[i] - min_price);
         }
-        return f[prices.size()];
+        return result;
     }
 };
 //submit end
