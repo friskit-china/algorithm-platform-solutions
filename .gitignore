@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Mac lldb compile symbol
+*.dSYM/

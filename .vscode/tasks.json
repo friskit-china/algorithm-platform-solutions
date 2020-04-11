@@ -3,9 +3,10 @@
     "tasks": [
         {
             "type": "shell",
-            "label": "g++ build active file",
+            "label": "(WSL) C/C++: g++ build active file",
             "command": "/usr/bin/g++",
             "args": [
+                "-std=c++11",
                 "-g",
                 "${file}",
                 "-pthread",
@@ -19,10 +20,26 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "(MacOS) C/C++: clang++ build active file",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-std=c++11",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out"
+            ],
+            "options": {
+                "cwd": "/usr/bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
         }
     ]
 }
