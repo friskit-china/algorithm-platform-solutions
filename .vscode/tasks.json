@@ -30,6 +30,7 @@
                 "-std=c++11",
                 "-g",
                 "${file}",
+                "-O0",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}.out"
             ],
