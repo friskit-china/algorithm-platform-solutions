@@ -12,13 +12,11 @@ public:
         int sum_cur = nums[0];
         for (int i = 1; i < nums.size(); i += 1){
             if (sum_cur > 0){
-                sum_cur = sum_cur + nums[i];
+                sum_cur += nums[i];
             }else{
                 sum_cur = nums[i];
             }
-            if (sum_cur > sum_max){
-                sum_max = sum_cur;
-            }
+            sum_max = max(sum_max, sum_cur);
         }
         return sum_max;
     }
