@@ -8,18 +8,28 @@ public:
         if (costs.size() == 0){
             return 0;
         }
-        int paint_r[costs.size()];
-        int paint_b[costs.size()];
-        int paint_g[costs.size()];
-        paint_r[0] = costs[0][0];
-        paint_b[0] = costs[0][1];
-        paint_g[0] = costs[0][2];
-        for (int i=1; i< costs.size(); ++i){
-            paint_r[i] = min(paint_b[i-1], paint_g[i-1]) + costs[i][0];
-            paint_b[i] = min(paint_r[i-1], paint_g[i-1]) + costs[i][1];
-            paint_g[i] = min(paint_r[i-1], paint_b[i-1]) + costs[i][2];
+        int f[costs.size()][costs[0].size()];
+        for (int j = 0; j < costs[0].size(); ++j){
+            f[0][j] = costs[0][j];
         }
-        return min(paint_r[costs.size()-1], min(paint_g[costs.size() - 1], paint_b[costs.size() - 1]));
+        for (int i = 1; i < costs.size(); ++i){
+            for (int j = 0; j < costs[0].size(); ++j){
+                int t = INT32_MAX;
+                for (int k = 0; k < costs[0].size(); ++k){
+                    if (j == k){ // skip the same color
+                        continue;
+                    }
+                    t = min(t, f[i - 1][k]);
+                }
+                f[i][j] = t + costs[i][j];
+            }
+        }
+        
+        int m = INT32_MAX;
+        for (int j = 0; j < costs[0].size(); ++j){
+            m = min(m, f[costs.size() - 1][j]);
+        }
+        return m;
     }
 };
 
