@@ -49,6 +49,7 @@
         "ratio": "cpp",
         "mutex": "cpp",
         "cstring": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "__locale": "cpp"
     }
 }

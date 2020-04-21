@@ -12,7 +12,8 @@
                 "-pthread",
                 "-O0",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.out"
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "--debug"
             ],
             "options": {
                 "cwd": "/usr/bin"
@@ -27,12 +28,13 @@
             "label": "(MacOS) C++: clang++ build active file",
             "command": "/usr/bin/clang++",
             "args": [
-                "-std=c++11",
+                // "-std=c++11",
                 "-g",
                 "${file}",
-                "-O0",
+                // "-O0",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.out"
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "--debug"
             ],
             "options": {
                 "cwd": "/usr/bin"
@@ -52,7 +54,8 @@
                 "${file}",
                 "-O0",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}.out"
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "--debug"
             ],
             "options": {
                 "cwd": "/usr/bin"
