@@ -12,12 +12,11 @@ class Solution {
 }
 
 
-public class v01 {
+public class leetcode_0007_v01 {
     public static void main(String[] argv){
         Solution sl = new Solution();
         System.out.println(sl.reverse(123)); // 321
         System.out.println(sl.reverse(-123)); // -321
     }
-
 }
 
