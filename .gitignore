@@ -33,3 +33,6 @@
 
 # Mac lldb compile symbol
 *.dSYM/
+
+# Mac
+.DS_Store
