@@ -1,10 +1,8 @@
+package leetcode.leetcode_0019_medm_remove_nth_node_from_end_of_list;
+
 /**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
+ * Definition for singly-linked list. public class ListNode { int val; ListNode
+ * next; ListNode(int x) { val = x; } }
  */
 
 class ListNode {

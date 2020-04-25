@@ -1,3 +1,5 @@
+package leetcode.leetcode_0012_medm_integer_to_roman;
+
 import java.util.HashMap;
 
 class Solution {
@@ -33,7 +35,7 @@ class Solution {
 }
 
 
-public class leetcode_0012_v01 {
+public class v01 {
     public static void main(String[] argv){
         Solution sl = new Solution();
         System.out.println(sl.intToRoman(3)); // III

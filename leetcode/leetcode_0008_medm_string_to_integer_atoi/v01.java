@@ -1,7 +1,10 @@
+package leetcode.leetcode_0008_medm_string_to_integer_atoi;
+
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+@SuppressWarnings("unchecked")
 class Solution {
     public class FSM{
         private int current_number = 0;

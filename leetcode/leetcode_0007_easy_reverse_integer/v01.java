@@ -1,3 +1,5 @@
+package leetcode.leetcode_0007_easy_reverse_integer;
+
 class Solution {
     public int reverse(int x) {
         int r = 0;
