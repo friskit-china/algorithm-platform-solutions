@@ -14,7 +14,7 @@ class Solution {
     }
 }
 
-public class leetcode_0011_v01 {
+public class v01 {
     public static void main(String[] argv){
         Solution sl = new Solution();
         System.out.println(sl.maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7})); // 49
