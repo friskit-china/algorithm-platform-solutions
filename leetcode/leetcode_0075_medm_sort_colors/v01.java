@@ -27,7 +27,7 @@ public class v01 {
     }
 
     public static void main(String[] argv){
-        int[] nums = new int[]{0, 1, 0};
+        int[] nums = new int[]{2,0,2,1,1,0};
         new Solution().sortColors(nums);
         for (int i = 0; i < nums.length; ++i){
             System.out.println(nums[i]);
