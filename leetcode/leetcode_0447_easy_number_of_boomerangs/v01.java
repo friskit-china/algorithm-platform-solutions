@@ -9,13 +9,13 @@ public class v01 {
             int result = 0;
             for (int i = 0; i < points.length; ++i){
                 int[] point_i = points[i];
-                Map<Double, Integer> m = new HashMap<Double, Integer>();
+                Map<Integer, Integer> m = new HashMap<Integer, Integer>();
                 for (int j = 0; j < points.length; ++j){
                     if (i == j){
                         continue;
                     }
                     int[] point_j = points[j];
-                    double d = distance(point_i, point_j);
+                    int d = distance(point_i, point_j);
                     m.put(d, m.getOrDefault(d, 0) + 1);
                 }
                 for (var item: m.entrySet()){
@@ -26,8 +26,8 @@ public class v01 {
             }
             return result;
         }
-        private double distance(int[] pointA, int[] pointB){
-            return Math.sqrt(Math.pow(pointA[0] - pointB[0], 2) + Math.pow(pointA[1] - pointB[1], 2));
+        private int distance(int[] pointA, int[] pointB){
+            return (pointA[0] - pointB[0]) * (pointA[0] - pointB[0]) + (pointA[1] - pointB[1]) * (pointA[1] - pointB[1]);
         }        
     }
 
