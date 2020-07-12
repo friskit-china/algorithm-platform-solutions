@@ -1,6 +1,5 @@
 package leetcode.leetcode_0283_easy_move_zeroes;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 

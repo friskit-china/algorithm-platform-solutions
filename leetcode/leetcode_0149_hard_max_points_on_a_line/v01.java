@@ -23,8 +23,8 @@ public class v01 {
                 if (o == null | getClass() != o.getClass()){
                     return false;
                 }
-
-                Pair pair = (Pair) o;
+                @SuppressWarnings("unchecked")
+                Pair<T1, T2> pair = (Pair<T1, T2>) o;
                 if (A != null ? !A.equals(pair.A) : pair.A != null) return false;
                 if (B != null ? !B.equals(pair.B) : pair.B != null) return false;
 
